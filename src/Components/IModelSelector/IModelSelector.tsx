@@ -15,6 +15,7 @@ interface IModelSelectorProps {
 
 export enum SampleIModels {
   MetroStation = "Metrostation Sample",
+  Stadium = "Stadium",
   RetailBuilding = "Retail Building Sample",
   BayTown = "Bay Town Process Plant",
   House = "House Sample",
@@ -22,7 +23,7 @@ export enum SampleIModels {
 
 export class IModelSelector extends React.Component<IModelSelectorProps, {}> {
 
-  public static defaultIModelList = [SampleIModels.MetroStation, SampleIModels.RetailBuilding, SampleIModels.BayTown, SampleIModels.House];
+  public static defaultIModelList = [SampleIModels.MetroStation, SampleIModels.Stadium, SampleIModels.RetailBuilding, SampleIModels.BayTown, SampleIModels.House];
   public static defaultIModel = SampleIModels.MetroStation;
 
   private _handleSelection = async (event: React.ChangeEvent<HTMLSelectElement>) => {
